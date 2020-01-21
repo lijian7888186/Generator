@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="${entityMeta.packageName}.mapper.${entityMeta.className}Mapper">
+    <resultMap id="BaseResultMap" type="${entityMeta.packageName}.domain.entity.${entityMeta.className}">
+#foreach($fieldMeta in $entityMeta.fieldMetaList)
+    #if(${fieldMeta.primaryKey})
+    <id column="${fieldMeta.columnName}" property="${fieldMeta.javaName}" jdbcType="${fieldMeta.columnType}" />
+#else
+    <result column="${fieldMeta.columnName}" property="${fieldMeta.javaName}" jdbcType="${fieldMeta.columnType}" />
+#end
+#end
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        <trim prefix="" suffix="" suffixOverrides=",">
+    #foreach($fieldMeta in $entityMeta.fieldMetaList)
+        ${fieldMeta.columnName},
+    #end
+    </trim>
+    </sql>
+
+    <!-- 根据Id查询 -->
+    <select id="get${entityMeta.className}" resultMap="BaseResultMap" parameterType="${entityMeta.pkFieldMeta.javaClassName}">
+        select
+        <include refid="Base_Column_List" />
+        from ${entityMeta.tableName}
+        where ${entityMeta.pkFieldMeta.columnName} = #{${entityMeta.pkFieldMeta.javaName},jdbcType=${entityMeta.pkFieldMeta.columnType}}
+    </select>
+
+    <!-- 根据条件查询列表 -->
+    <select id="find${entityMeta.className}List" resultMap="BaseResultMap" parameterType="${entityMeta.packageName}.condition.${entityMeta.className}Condition">
+        select
+        <include refid="Base_Column_List" />
+        from ${entityMeta.tableName}
+        <where>
+            yn = 1
+#foreach($fieldMeta in $entityMeta.fieldMetaList)
+            <if test="po.$fieldMeta.javaName != null and po.$fieldMeta.javaName != ''">
+                and ${fieldMeta.columnName} = #{po.${fieldMeta.javaName},jdbcType=${fieldMeta.columnType}}
+            </if>
+#end
+        </where>
+    </select>
+
+    <!-- 插入实体 -->
+    <insert id="insert${entityMeta.className}" parameterType="${entityMeta.packageName}.domain.entity.${entityMeta.className}" useGeneratedKeys="true" keyProperty="${entityMeta.pkFieldMeta.columnName}">
+        insert into ${entityMeta.tableName}
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+#foreach($fieldMeta in $entityMeta.fieldMetaList)
+            $fieldMeta.columnName,
+#end
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+#foreach($fieldMeta in $entityMeta.fieldMetaList)
+            #{${fieldMeta.javaName},jdbcType=${fieldMeta.columnType}},
+#end
+        </trim>
+    </insert>
+
+    <!-- 修改实体 -->
+    <update id="update${entityMeta.className}" parameterType="${entityMeta.packageName}.domain.entity.${entityMeta.className}">
+        update ${entityMeta.tableName}
+        <set>
+            <trim prefix="" suffix="" suffixOverrides=",">
+    #foreach($fieldMeta in $entityMeta.fieldMetaList)
+            <if test="$fieldMeta.javaFieldName != null">
+                    $fieldMeta.columnName = #{$fieldMeta.javaName,jdbcType=$fieldMeta.columnType},
+                </if>
+    #end
+        </trim>
+        </set>
+        where ${entityMeta.pkFieldMeta.columnName} = #{${entityMeta.pkFieldMeta.javaName},jdbcType=${entityMeta.pkFieldMeta.columnType}}
+    </update>
+
+    <!-- 删除实体 -->
+    <update id="delete${entityMeta.className}" parameterType="${entityMeta.pkFieldMeta.javaClassName}">
+        update ${entityMeta.tableName}
+        <set>
+            yn = 1
+        </set>
+        where ${entityMeta.pkFieldMeta.columnName} = #{${entityMeta.pkFieldMeta.javaName},jdbcType=${entityMeta.pkFieldMeta.columnType}}
+    </update>
+</mapper>

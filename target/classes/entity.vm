@@ -1,0 +1,47 @@
+package $!{entityMeta.packageName}.domain.entity;
+
+import java.io.Serializable;
+#foreach($!{importClass} in $!{entityMeta.importClassList})
+import $!{importClass};
+#end
+
+/**
+* $!{entityMeta.comment}
+* @author $!entityMeta.author
+*/
+public class $!entityMeta.className implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    #foreach($!fieldMeta in $!entityMeta.fieldMetaList)
+/**
+    * $fieldMeta.comment
+    */
+    private $fieldMeta.javaType $fieldMeta.javaName;
+
+    #end
+
+    #foreach($fieldMeta in $entityMeta.fieldMetaList)
+
+    /**
+    * @return the $fieldMeta.javaName
+    */
+    #if(${fieldMeta.javaType}=="boolean" || ${fieldMeta.javaType}=="Boolean")
+
+    public $fieldMeta.javaType is${fieldMeta.upperJavaName}() {
+    #else
+
+    public $fieldMeta.javaType get${fieldMeta.upperJavaName}() {
+    #end
+        return $fieldMeta.javaName;
+    }
+
+    /**
+    * @param the $fieldMeta.javaName to set
+    */
+    public void set${fieldMeta.upperJavaName}($fieldMeta.javaType $fieldMeta.javaName) {
+        this.$fieldMeta.javaName = $fieldMeta.javaName;
+    }
+
+#end
+}

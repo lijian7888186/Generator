@@ -1,0 +1,48 @@
+package ${entityMeta.packageName}.mapper;
+
+import java.util.List;
+import org.apache.ibatis.annotations.Param;
+import ${entityMeta.packageName}.domain.entity.${entityMeta.className};
+import ${entityMeta.packageName}.condition.${entityMeta.className}Condition;
+
+/**
+* ${entityMeta.comment}Mapper
+* @author $!entityMeta.author
+* @Date $!entityMeta.generateDate
+*/
+public interface ${entityMeta.className}Mapper {
+
+    /**
+    * 获取${entityMeta.comment}
+    * @param ${entityMeta.pkFieldMeta.javaName}
+    * @return the ${entityMeta.className}
+    */
+    ${entityMeta.className} get${entityMeta.className}(${entityMeta.pkFieldMeta.javaType} ${entityMeta.pkFieldMeta.javaName});
+
+    /**
+    * 插入${entityMeta.comment}
+    * @param ${entityMeta.lowerClassName}
+    */
+    Long insert${entityMeta.className}(${entityMeta.className} ${entityMeta.lowerClassName});
+
+    /**
+    * 更新${entityMeta.comment}
+    * @param ${entityMeta.lowerClassName}
+    */
+    Long update${entityMeta.className}(${entityMeta.className} ${entityMeta.lowerClassName});
+
+    /**
+    * 删除${entityMeta.comment}
+    * @param ${entityMeta.pkFieldMeta.javaName}
+    */
+    Long delete${entityMeta.className}(${entityMeta.pkFieldMeta.javaType} ${entityMeta.pkFieldMeta.javaFieldName});
+
+    /**
+    * @Description: 按条件获取${entityMeta.comment}列表
+    * @param page
+    * @param ${entityMeta.lowerClassName}Condition
+    * @return
+    */
+    List find${entityMeta.className}List(@Param("page")Page page,@Param("po")${entityMeta.className}Condition ${entityMeta.lowerClassName}Condition);
+
+}
