@@ -41,7 +41,7 @@ public class ${entityMeta.className}ServiceImpl implements ${entityMeta.classNam
     * @see${entityMeta.packageName}.service.${entityMeta.className}Service\#delete(java.lang.Long)
     */
     @Override
-    public Long delete${entityMeta.className}(Long id) {
+    public Long delete${entityMeta.className}(${entityMeta.pkFieldMeta.javaType} ${entityMeta.pkFieldMeta.javaName}) {
         return ${entityMeta.lowerClassName}Mapper.delete${entityMeta.className}(id);
     }
     /*

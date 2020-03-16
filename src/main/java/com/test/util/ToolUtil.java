@@ -26,4 +26,8 @@ public class ToolUtil {
         matcher.appendTail(stringBuffer);
         return stringBuffer.toString();
     }
+
+    public static void main(String[] args) {
+        System.out.println(lineToHump("test_te1_tet_1_test"));
+    }
 }

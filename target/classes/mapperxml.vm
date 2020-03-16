@@ -64,7 +64,7 @@
         <set>
             <trim prefix="" suffix="" suffixOverrides=",">
     #foreach($fieldMeta in $entityMeta.fieldMetaList)
-            <if test="$fieldMeta.javaFieldName != null">
+            <if test="$fieldMeta.javaName != null">
                     $fieldMeta.columnName = #{$fieldMeta.javaName,jdbcType=$fieldMeta.columnType},
                 </if>
     #end

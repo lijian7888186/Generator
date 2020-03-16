@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.test.entity.EntityMeta;
 import com.test.entity.FieldMate;
+import com.test.util.ToolUtil;
 import org.apache.commons.lang.StringUtils;
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
@@ -81,10 +82,11 @@ public class GeneratorTest {
         }
         VelocityContext context = new VelocityContext();
         EntityMeta entityMeta = new EntityMeta();
-        entityMeta.setClassName(table.substring(0, 1).toUpperCase() + table.substring(1));
+        String line2Hump = ToolUtil.lineToHump(table);
+        entityMeta.setClassName(table.substring(0, 1).toUpperCase() + line2Hump.substring(1));
         entityMeta.setPackageName(MysqlData.packageName);
         entityMeta.setTableName(MysqlData.tables.get(0));
-        entityMeta.setLowerClassName(entityMeta.getClassName().substring(0, 1).toLowerCase() + entityMeta.getClassName().substring(1));
+        entityMeta.setLowerClassName(line2Hump);
         entityMeta.setFieldMetaList(list);
         entityMeta.setComment(MysqlData.findComment(table));
         List<String> importList = new ArrayList<>();
