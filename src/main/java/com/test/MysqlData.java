@@ -131,6 +131,8 @@ public class MysqlData {
                 fieldMate.setColumnType(metaData.getColumnTypeName(i));
                 if ("INT".equalsIgnoreCase(metaData.getColumnTypeName(i))) {
                     fieldMate.setColumnType("INTEGER");
+                } else if (metaData.getColumnTypeName(i).startsWith("BIGINT")) {
+                    fieldMate.setColumnType("BIGINT");
                 }
                 Map<String, Object> map = TypeUtil.findClass(fieldMate.getColumnType());
                 fieldMate.setJavaType((String) map.get("className"));
