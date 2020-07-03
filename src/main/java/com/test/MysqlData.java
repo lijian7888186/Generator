@@ -17,7 +17,7 @@ import java.util.*;
  * @desc
  */
 public class MysqlData {
-    private static String url = "jdbc:mysql://localhost:3306/test?characterEncoding=UTF-8";
+    private static String url = "jdbc:mysql://localhost:3306/test?characterEncoding=UTF-8&serverTimezone=Asia/Shanghai";
     private static String username = "root";
     private static String password = "mysql";
     public static List<String> tables;
@@ -74,7 +74,8 @@ public class MysqlData {
                 fileName = packageName.replaceAll("[.]", fileSeparator);
             }
             try {
-                Class.forName("com.mysql.jdbc.Driver");
+//                Class.forName("com.mysql.jdbc.Driver");
+                Class.forName("com.mysql.cj.jdbc.Driver");
                 connection = DriverManager.getConnection(url, username, password);
             } catch (Exception e) {
                 e.printStackTrace();

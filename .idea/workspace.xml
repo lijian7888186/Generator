@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc44e64e-e8bc-489c-b04e-513925594c2b" name="Default Changelist" comment="修改bigint的判断">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="dc44e64e-e8bc-489c-b04e-513925594c2b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/MysqlData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/MysqlData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/MysqlData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/MysqlData.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,41 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper.vm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="37" column="110" selection-start-line="37" selection-start-column="110" selection-end-line="37" selection-end-column="110" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapperxml.vm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/GeneratorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-156">
-              <caret line="76" column="53" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/MysqlData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="135" column="17" lean-forward="true" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
+            <state relative-caret-position="274">
+              <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,46 +36,90 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/util/TypeUtil.java">
+        <entry file="jar://C:/Java/jdk1.8.0_192/src.zip!/java/sql/DriverManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="264">
+              <caret line="663" column="56" selection-start-line="663" selection-start-column="56" selection-end-line="663" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Java/jdk1.8.0_192/src.zip!/java/sql/Driver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="89" column="33" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16-sources.jar!/com/mysql/cj/jdbc/NonRegisteringDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="198" column="66" selection-start-line="198" selection-start-column="66" selection-end-line="198" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16-sources.jar!/com/mysql/cj/conf/ConnectionUrl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="257" column="51" selection-start-line="257" selection-start-column="51" selection-end-line="257" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16-sources.jar!/com/mysql/cj/conf/ConnectionUrlParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="146" column="26" selection-start-line="146" selection-start-column="26" selection-end-line="146" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16-sources.jar!/com/mysql/cj/exceptions/ExceptionFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="74">
+              <caret line="83" column="44" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16-sources.jar!/com/mysql/cj/jdbc/ConnectionImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="136" column="27" selection-start-line="136" selection-start-column="27" selection-end-line="136" selection-end-column="27" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#5560#5561#0" expanded="true" />
+                <element signature="e#5640#5641#0" expanded="true" />
+                <element signature="e#20086#20104#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/service.vm">
+        <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16-sources.jar!/com/mysql/cj/protocol/a/NativeServerSession.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="36" column="107" selection-start-line="36" selection-start-column="107" selection-end-line="36" selection-end-column="107" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/serviceimpl.vm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="43" column="114" selection-start-line="43" selection-start-column="114" selection-end-line="43" selection-end-column="114" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/entity/EntityMeta.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state relative-caret-position="106">
+              <caret line="266" selection-start-line="266" selection-end-line="266" />
               <folding>
-                <element signature="e#1713#1714#0" expanded="true" />
-                <element signature="e#1743#1744#0" expanded="true" />
-                <element signature="e#1789#1790#0" expanded="true" />
-                <element signature="e#1827#1828#0" expanded="true" />
+                <element signature="e#9730#9731#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16-sources.jar!/com/mysql/cj/protocol/a/NativeProtocol.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2230" selection-start-line="2230" selection-end-line="2230" />
             </state>
           </provider>
         </entry>
@@ -140,7 +154,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/test/util/TypeUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/entity/EntityMeta.java" />
         <option value="$PROJECT_DIR$/src/main/assemble/package.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/util/ToolUtil.java" />
@@ -150,6 +163,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/serviceimpl.vm" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper.vm" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/MysqlData.java" />
       </list>
     </option>
@@ -193,6 +207,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -241,8 +257,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -276,7 +290,7 @@
     <configuration name="GeneratorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.GeneratorTest" />
       <module name="Generator" />
-      <option name="VM_PARAMETERS" value="-Dfile.encoding=UTF-8 -Dparam={'url':'jdbc:mysql://localhost:3306/test?characterEncoding=UTF-8','username':'root','password':'mysql','tables':'test_user','connector':'line','packageName':'com.generator.test'}" />
+      <option name="VM_PARAMETERS" value="-Dfile.encoding=UTF-8 -Dparam={'url':'jdbc:mysql://localhost:3306/test?characterEncoding=UTF-8&amp;serverTimezone=Asia/Shanghai','username':'root','password':'mysql','tables':'test_user','connector':'line','packageName':'com.generator.test'}" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.test.*" />
@@ -349,7 +363,8 @@
       <workItem from="1584350189707" duration="1003000" />
       <workItem from="1584451873159" duration="17000" />
       <workItem from="1587537780476" duration="1177000" />
-      <workItem from="1592808983495" duration="1645000" />
+      <workItem from="1592808983495" duration="1750000" />
+      <workItem from="1593660853157" duration="2770000" />
     </task>
     <task id="LOCAL-00001" summary="修改类名称">
       <created>1584349415564</created>
@@ -358,28 +373,34 @@
       <option name="project" value="LOCAL" />
       <updated>1584349415564</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="修改bigint的判断">
+      <created>1592821334218</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592821334218</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61068000" />
+    <option name="totallyTimeSpent" value="63943000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="4" width="1260" height="642" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.13555992" visible="true" weight="0.31281197" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.13555992" visible="true" weight="0.31780365" />
       <window_info id="Structure" order="1" sideWeight="0.8644401" side_tool="true" weight="0.25395504" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.50284094" side_tool="true" weight="0.24979185" />
-      <window_info anchor="bottom" id="Duplication Code Results" />
-      <window_info anchor="bottom" id="风险组件扫描" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.50687623" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3988212" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38506877" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -390,6 +411,8 @@
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Console" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Duplication Code Results" order="14" />
+      <window_info anchor="bottom" id="风险组件扫描" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -411,27 +434,37 @@
     <MESSAGE value="修改bigint的判断" />
     <option name="LAST_COMMIT_MESSAGE" value="修改bigint的判断" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16-sources.jar!/com/mysql/cj/protocol/a/NativeProtocol.java</url>
+          <line>2230</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16-sources.jar!/com/mysql/cj/protocol/a/NativeServerSession.java</url>
+          <line>266</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16-sources.jar!/com/mysql/cj/jdbc/NonRegisteringDriver.java</url>
+          <line>186</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16-sources.jar!/com/mysql/cj/jdbc/ConnectionImpl.java</url>
+          <line>382</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Java/jdk1.8.0_192/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="2131" column="19" selection-start-line="2131" selection-start-column="19" selection-end-line="2131" selection-end-column="19" />
-          <folding>
-            <element signature="e#82971#82972#0" expanded="true" />
-            <element signature="e#83020#83021#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator/com/generator/test/mapper/Test1.java" />
-    <entry file="file://$PROJECT_DIR$/generator/com/generator/test/resources/Test1.xml" />
-    <entry file="file://$PROJECT_DIR$/generator/com/generator/test/entity/Test1.java" />
-    <entry file="file://$PROJECT_DIR$/generator/com/generator/test/mapper/Test.java" />
-    <entry file="file://$PROJECT_DIR$/generator/com/generator/test/resources/Test.xml" />
-    <entry file="file://$PROJECT_DIR$/generator/com/generator/test/service/impl/TestImpl.java" />
-    <entry file="file://$PROJECT_DIR$/generator/com/generator/test/service/Test.java" />
-    <entry file="file://$PROJECT_DIR$/generator/com/generator/test/service/impl/Test1Impl.java" />
-    <entry file="file://$PROJECT_DIR$/generator/com/generator/test/service/impl/Test1ServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/assemble/package.xml" />
     <entry file="file://$PROJECT_DIR$/target/generator/com/generator/test/entity/Test.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-maven-plugin/2.2.0.M5/spring-boot-maven-plugin-2.2.0.M5.jar!/META-INF/maven/plugin.xml">
@@ -469,13 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/entity.vm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -485,13 +511,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/generator/com/generator/test/resources/TestMapper.xml" />
     <entry file="file://$PROJECT_DIR$/generator/com/generator/test/resources/Doris_sales_order_predictMapper.xml" />
-    <entry file="jar://C:/Java/jdk1.8.0_192/src.zip!/java/sql/DriverManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3010">
-          <caret line="246" column="16" selection-start-line="246" selection-start-column="16" selection-end-line="246" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -527,10 +546,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/generator/com/generator/test/entity/SalesCateMonth.java" />
     <entry file="file://$PROJECT_DIR$/generator/com/generator/test/resources/SalesCateMonthMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/generator/com/generator/test/mapper/PredictValuesFinalLogMapper.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/entity/FieldMate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#1754#1755#0" expanded="true" />
+            <element signature="e#1787#1788#0" expanded="true" />
+            <element signature="e#1840#1841#0" expanded="true" />
+            <element signature="e#1884#1885#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/com/generator/test/entity/PredictValuesFinalLog.java" />
+    <entry file="file://$PROJECT_DIR$/generator/com/generator/test/resources/PredictValuesFinalLogMapper.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper.vm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="518">
           <caret line="37" column="110" selection-start-line="37" selection-start-column="110" selection-end-line="37" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapperxml.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/util/TypeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -548,51 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/com/generator/test/mapper/PredictValuesFinalLogMapper.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapperxml.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/GeneratorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156">
-          <caret line="76" column="53" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/util/TypeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/entity/FieldMate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#1754#1755#0" expanded="true" />
-            <element signature="e#1787#1788#0" expanded="true" />
-            <element signature="e#1840#1841#0" expanded="true" />
-            <element signature="e#1884#1885#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/entity/EntityMeta.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -606,24 +615,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/com/generator/test/entity/PredictValuesFinalLog.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-406">
-          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        <state relative-caret-position="224">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/com/generator/test/resources/PredictValuesFinalLogMapper.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar!/com/mysql/cj/exceptions/ExceptionFactory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="63" lean-forward="true" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+        <state relative-caret-position="56">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16-sources.jar!/com/mysql/cj/util/TimeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="106" column="64" selection-start-line="106" selection-start-column="53" selection-end-line="106" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/GeneratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16-sources.jar!/com/mysql/cj/exceptions/ExceptionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="83" column="44" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_192/src.zip!/java/sql/DriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="663" column="56" selection-start-line="663" selection-start-column="56" selection-end-line="663" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_192/src.zip!/java/sql/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="89" column="33" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16-sources.jar!/com/mysql/cj/conf/ConnectionUrlParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="146" column="26" selection-start-line="146" selection-start-column="26" selection-end-line="146" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16-sources.jar!/com/mysql/cj/conf/ConnectionUrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="257" column="51" selection-start-line="257" selection-start-column="51" selection-end-line="257" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16-sources.jar!/com/mysql/cj/jdbc/NonRegisteringDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="198" column="66" selection-start-line="198" selection-start-column="66" selection-end-line="198" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16-sources.jar!/com/mysql/cj/jdbc/ConnectionImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="136" column="27" selection-start-line="136" selection-start-column="27" selection-end-line="136" selection-end-column="27" />
+          <folding>
+            <element signature="e#5560#5561#0" expanded="true" />
+            <element signature="e#5640#5641#0" expanded="true" />
+            <element signature="e#20086#20104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16-sources.jar!/com/mysql/cj/protocol/a/NativeProtocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2230" selection-start-line="2230" selection-end-line="2230" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16-sources.jar!/com/mysql/cj/protocol/a/NativeServerSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="266" selection-start-line="266" selection-end-line="266" />
+          <folding>
+            <element signature="e#9730#9731#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/MysqlData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="135" column="17" lean-forward="true" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
+        <state relative-caret-position="274">
+          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
